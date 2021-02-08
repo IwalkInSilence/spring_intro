@@ -37,5 +37,4 @@ public class AppConfig {
         factoryBean.setAnnotatedClasses(User.class);
         return factoryBean;
     }
-
 }
