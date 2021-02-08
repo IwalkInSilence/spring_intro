@@ -42,7 +42,7 @@ public class UserDaoImpl implements UserDao {
     @Override
     public List<User> listUsers() {
         try (Session session = sessionFactory.openSession()) {
-            return session.createQuery("select u from User u", User.class).getResultList();
+            return session.createQuery("from User ", User.class).getResultList();
         } catch (Exception e) {
             throw new RuntimeException("Error retrieving all users", e);
         }
