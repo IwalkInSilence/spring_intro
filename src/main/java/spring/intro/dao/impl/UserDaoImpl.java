@@ -4,7 +4,6 @@ import java.util.List;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import spring.intro.dao.UserDao;
 import spring.intro.model.User;
@@ -13,7 +12,6 @@ import spring.intro.model.User;
 public class UserDaoImpl implements UserDao {
     private final SessionFactory sessionFactory;
 
-    @Autowired
     public UserDaoImpl(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
