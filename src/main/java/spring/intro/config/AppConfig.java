@@ -11,8 +11,8 @@ import spring.intro.model.User;
 
 @Configuration
 @ComponentScan(basePackages = {
-        "spring.intro.service.impl",
-        "spring.intro.dao.impl"
+        "spring.intro.service",
+        "spring.intro.dao"
 })
 public class AppConfig {
 
