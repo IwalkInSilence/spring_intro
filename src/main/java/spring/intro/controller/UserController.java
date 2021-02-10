@@ -54,7 +54,7 @@ public class UserController {
     }
 
     @GetMapping("/")
-    List<UserResponseDto> getall() {
+    List<UserResponseDto> getAll() {
         return userService.listUsers()
                 .stream()
                 .map(userMapper::parseToDto)

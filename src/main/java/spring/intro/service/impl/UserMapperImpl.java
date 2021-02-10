@@ -9,6 +9,7 @@ import spring.intro.service.UserMapper;
 public class UserMapperImpl implements UserMapper {
     public UserResponseDto parseToDto(User user) {
         UserResponseDto dto = new UserResponseDto();
+        dto.setId(user.getId());
         dto.setEmail(user.getEmail());
         dto.setName(user.getName());
         return dto;
