@@ -51,7 +51,7 @@ public class UserDaoImpl implements UserDao {
         try (Session session = sessionFactory.openSession()) {
             return session.get(User.class, id);
         } catch (Exception e) {
-            throw new RuntimeException("Error retrieving all users", e);
+            throw new RuntimeException("Error retrieve user with id: " + id, e);
         }
     }
 }
