@@ -1,4 +1,4 @@
-package spring.intro.controllers;
+package spring.intro.controller;
 
 import java.util.List;
 import java.util.stream.Collectors;
